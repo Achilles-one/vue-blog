@@ -1,18 +1,18 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div class="home">
+    <el-table :data="tableData" border style="width: 100%">
+        <!-- prop定义表格属性 -->
+    <el-table-column prop="date" label="日期" width="180" />
+    <el-table-column prop="name" label="姓名" width="180" />
+    <el-table-column prop="address" label="地址" />
+  </el-table>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+
 
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
+  
 }
 </script>
